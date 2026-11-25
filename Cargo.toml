@@ -2,5 +2,23 @@
 name = "rust-http-server"
 version = "0.1.0"
 edition = "2024"
+description = "A lightweight asynchronous HTTP server written in Rust"
+license = "MIT"
+repository = "https://github.com/Azzek/rust-http-server"
+
+[lib]
+name = "rust_http_server"
+path = "src/lib.rs"
 
 [dependencies]
+tokio = { version = "1", features = [
+  "rt",
+  "rt-multi-thread",
+  "macros",
+  "net",
+  "io-util",
+  "sync",
+  "time",
+] }
+
+thiserror = "2"

@@ -1,4 +1,4 @@
-use crate::commands::server::response::{IntoResponse, Response, StatusCode};
+use crate::{IntoResponse, Response, StatusCode};
 use std::io::{self};
 
 #[derive(Debug, thiserror::Error)]

@@ -1,7 +1,7 @@
 use std::collections::HashMap;
 use tokio::io::{AsyncBufReadExt, AsyncReadExt, BufReader};
 
-use crate::commands::server::app_error::AppError;
+use crate::app_error::AppError;
 
 pub struct Request {
     pub method: String,

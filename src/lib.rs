@@ -1,9 +1,10 @@
 mod app;
-mod error;
+mod app_error;
 mod request;
 mod response;
 mod router;
 
 pub use app::App;
 pub use request::Request;
-pub use response::{Response, StatusCode, IntoResponse};
+pub use response::{IntoResponse, Response, StatusCode};
+
